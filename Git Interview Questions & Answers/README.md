@@ -230,4 +230,4 @@
 
 50. How can you undo a merge?
 
-   Use git reset --merge or git revert -m 1 <merge-commit-hash>.
+    Use git reset --merge or git revert -m 1 <merge-commit-hash>.
