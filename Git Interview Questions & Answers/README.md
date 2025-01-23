@@ -198,7 +198,7 @@
 
 43. What is the significance of git config?
     
-   It configures Git settings like username, email, and editor.
+    It configures Git settings like username, email, and editor.
 
 44. What is the purpose of the git fsck command?
 
@@ -206,13 +206,13 @@
 
 45. How to squash commits in Git?
     
-   Use git rebase -i and mark commits as "squash" (s).
+    Use git rebase -i and mark commits as "squash" (s).
 
 46. What is the difference between git archive and git bundle?
 
-   git archive: Creates a zip/tar of files.
+    git archive: Creates a zip/tar of files.
 
-   git bundle: Bundles repository data for transfer.
+    git bundle: Bundles repository data for transfer.
 
 47. How to find a specific commit in the history?
     
