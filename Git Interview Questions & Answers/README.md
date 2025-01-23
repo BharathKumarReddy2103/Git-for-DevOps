@@ -1,5 +1,7 @@
 **Here are 50 Git Interview Questions from basic to advanced along with their answers for DevOps Interviews:**
 
+**Basic Git Interview Questions:**
+
 1. What is Git?
 
    Git is a distributed version control system that tracks changes in files and coordinates work among multiple developers.
@@ -141,6 +143,8 @@
 30. How to rename a branch?
 
     Use git branch -m <new-branch-name>.
+
+**Advanced Git Interview Questions:**
 
 31. What is the difference between soft, mixed, and hard reset?
 
