@@ -1,6 +1,6 @@
 # Git for DevOps  
 
-Welcome to the **Git for DevOps** repository 
+Welcome to the **Git for DevOps** repository.
 
 This repository is dedicated to providing all the essential Git-related content for DevOps Engineers. Whether you are a beginner or an experienced DevOps professional, this repository will serve as your go-to resource for mastering Git in real-world DevOps scenarios.  
 
