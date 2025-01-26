@@ -11,7 +11,7 @@ Additional branches include:
 
 - **Feature Branches**: For developing new features.
 - **Release Branches**: For preparing a new production release.
-- **Hotfix Branches**: For quick fixes to production code[1](https://www.atlassian.com/agile/software-development/branching).
+- **Hotfix Branches**: For quick fixes to production code.
 
 ### 2. GitHub Flow
 
