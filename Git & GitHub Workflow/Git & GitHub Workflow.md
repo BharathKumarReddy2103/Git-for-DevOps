@@ -52,7 +52,7 @@ GitHub is a cloud-based **Git repository hosting service** that allows developer
 
 •	A repository (**repo**) is a storage location for code.
 
-•	Can be **public** (anyone can see) or private (only invited users can see).
+•	Can be **public** (anyone can see) or **private** (only invited users can see).
 
 **2. GitHub Branching Strategy**
 
