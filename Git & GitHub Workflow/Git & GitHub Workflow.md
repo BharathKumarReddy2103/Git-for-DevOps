@@ -82,7 +82,7 @@ git commit -m "Added a new feature"
 3.	Push the branch to GitHub:
 
   ```bash
-git push origin feature-new-feature
+git push -u origin feature-new-feature
 ```
 
 4.	Create a **Pull Request (PR)** on GitHub to merge changes into main.
