@@ -10,7 +10,7 @@ Git is a **distributed version control system (DVCS)** used to track changes in 
 
 **1.	Local Repository & Remote Repository:**
 
-      o	Git maintains a local repository on your machine and can sync with a remote repository (e.g., GitHub, GitLab, Bitbucket).
+o	Git maintains a local repository on your machine and can sync with a remote repository (e.g., GitHub, GitLab, Bitbucket).
 
 **2.	Snapshots Instead of Deltas:**
 
