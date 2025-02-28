@@ -6,52 +6,52 @@ The .git folder is the core of any Git repository. It contains all the metadata,
 
 ```sh
 .git/
-├── HEAD                        # Pointer to the current branch
-├── config                      # Repository configurations (user, remotes, hooks, etc.)
-├── description                 # Repository description (mainly used in bare repositories)
-├── index                       # Staging area (index) tracking changes before commit
-├── COMMIT_EDITMSG              # Stores last commit message
-├── FETCH_HEAD                  # Last fetched changes from a remote
-├── MERGE_HEAD                  # Active merge (if in progress)
-├── ORIG_HEAD                   # Previous HEAD before a risky operation
-├── hooks/                      # Custom scripts to automate Git actions
-│   ├── applypatch-msg          # Executes when a patch is applied
-│   ├── commit-msg              # Validates or modifies commit messages
-│   ├── pre-commit              # Runs checks before a commit is made
-│   ├── pre-push                # Runs before pushing to a remote
-│   ├── pre-rebase              # Runs before rebasing a branch
-│   ├── post-commit             # Executes after a commit is created
+├── HEAD                        # Tracks the currently checked-out branch
+├── config                      # Stores repository settings (user info, remotes, hooks)
+├── description                 # Short description (used in bare repositories)
+├── index                       # Tracks staged changes before committing
+├── COMMIT_EDITMSG              # Holds the most recent commit message
+├── FETCH_HEAD                  # Stores the latest fetch details from a remote repository
+├── MERGE_HEAD                  # Indicates an ongoing merge process
+├── ORIG_HEAD                   # Backup reference before a risky operation (e.g., reset)
+├── hooks/                      # Scripts that automate Git workflows
+│   ├── applypatch-msg          # Runs after applying a patch file
+│   ├── commit-msg              # Checks or modifies commit messages
+│   ├── pre-commit              # Executes before a commit is finalized
+│   ├── pre-push                # Runs checks before pushing changes
+│   ├── pre-rebase              # Validates before rebasing a branch
+│   ├── post-commit             # Executes post-commit actions
 │   └── ...
-├── info/                       # Miscellaneous repo metadata
-│   └── exclude                 # Local ignore rules (similar to .gitignore)
-├── objects/                    # Stores all Git data (commits, trees, blobs)
-│   ├── info/                   # Additional metadata for objects
-│   ├── pack/                   # Efficiently packed objects (saves space)
-│   │   ├── pack-xxxx.idx        # Index file for packed objects
-│   │   ├── pack-xxxx.pack       # Actual packed object data
-│   ├── 01/                     # Individual object subdirectories (hashed)
-│   ├── f7/                     # Another hashed subdirectory for objects
+├── info/                       # Repository metadata storage
+│   └── exclude                 # Defines ignored files locally (like .gitignore)
+├── objects/                    # Contains all stored Git data (commits, trees, blobs)
+│   ├── info/                   # Stores metadata related to Git objects
+│   ├── pack/                   # Stores packed objects to optimize space
+│   │   ├── pack-xxxx.idx        # Index file mapping packed objects
+│   │   ├── pack-xxxx.pack       # Compressed object storage file
+│   ├── 01/                     # Subdirectory for hashed object storage
+│   ├── f7/                     # Another hashed object subdirectory
 │   └── ...
-├── refs/                       # References to branches, tags, and remotes
-│   ├── heads/                  # Local branches
-│   │   ├── main                # Latest commit pointer in 'main' branch
-│   │   ├── develop             # Latest commit pointer in 'develop' branch
-│   │   ├── feature-x           # Latest commit pointer in 'feature-x' branch
+├── refs/                       # Holds references to branches, tags, and remotes
+│   ├── heads/                  # Stores references to local branches
+│   │   ├── main                # Pointer to the latest commit in 'main'
+│   │   ├── develop             # Pointer to the latest commit in 'develop'
+│   │   ├── feature-x           # Pointer to the latest commit in 'feature-x'
 │   │   └── ...
-│   ├── tags/                   # Tags for specific commit points
-│   │   ├── v1.0                # Tag pointing to release v1.0 commit
+│   ├── tags/                   # Contains references to specific commit points
+│   │   ├── v1.0                # Points to the commit for version 1.0 release
 │   │   └── ...
-│   ├── remotes/                # Remote branch tracking
-│   │   ├── origin/             # Tracks remote repo branches from 'origin'
-│   │   │   ├── HEAD            # Default branch pointer in the remote
-│   │   │   ├── main            # Tracks the latest commit in 'origin/main'
-│   │   │   ├── develop         # Tracks the latest commit in 'origin/develop'
+│   ├── remotes/                # Stores remote-tracking branches
+│   │   ├── origin/             # Tracks branches from the 'origin' repository
+│   │   │   ├── HEAD            # Default branch reference for the remote
+│   │   │   ├── main            # Tracks 'origin/main' latest commit
+│   │   │   ├── develop         # Tracks 'origin/develop' latest commit
 │   │   │   └── ...
-├── logs/                       # History of branch and HEAD movements
-│   ├── HEAD                    # HEAD movement logs (e.g., checkout, commit, push)
-│   ├── refs/                   # Branches and remotes logs
-│   │   ├── heads/              # Local branches changes logs
-│   │   ├── remotes/            # Remote branches changes logs
+├── logs/                       # Records changes to branches and HEAD movements
+│   ├── HEAD                    # Tracks HEAD movement history (checkouts, commits)
+│   ├── refs/                   # Logs changes for local and remote branches
+│   │   ├── heads/              # Logs history of local branches
+│   │   ├── remotes/            # Logs history of remote branches
 │   │   └── ...
 │   └── ...
 ```
