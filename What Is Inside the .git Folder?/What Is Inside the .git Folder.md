@@ -213,7 +213,7 @@ This is the heart of Git, where all actual data is stored.
 •	Example:
 
 ```sh
-•	.git/objects/f7/3a6d...  (Blob, tree, or commit object)
+.git/objects/f7/3a6d...  (Blob, tree, or commit object)
 ```
 
 •	The pack/ subdirectory contains packed objects, optimizing storage.
